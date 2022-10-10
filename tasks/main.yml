@@ -1,2 +1,14 @@
 ---
+- name: Disable hdmi audio
+  ansible.builtin.lineinfile:
+    path: /boot/config.txt
+    search_string: "dtoverlay=vc4-kms-v3d"
+    line: "dtoverlay=vc4-kms-v3d,noaudio"
+  when: not disable_pi_internal_audio_skip_hdmi
 
+- name: Disable analog audio
+  ansible.builtin.lineinfile:
+    path: /boot/config.txt
+    search_string: "dtparam=audio=on"
+    line: "#dtparam=audio=on"
+  when: not disable_pi_internal_audio_skip_analog

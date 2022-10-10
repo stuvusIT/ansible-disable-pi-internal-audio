@@ -1,0 +1,2 @@
+disable_pi_internal_audio_skip_hdmi: False
+disable_pi_internal_audio_skip_analog: False
