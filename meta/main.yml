@@ -1,19 +1,11 @@
 ---
 galaxy_info:
-  author: Insert author(s) here
-  description: Insert description here
+  author: Tim Neumann (tim.neumann@stuvus.uni-stuttgart.de)
+  description: Disables the internal audio of a raspberry pi.
   company: stuvus (https://stuvus.uni-stuttgart.de)
 
   license: MIT
 
   min_ansible_version: 2.5
-
-  platforms:
-    - name: Debian
-      versions:
-        - buster
-
-  galaxy_tags:
-    - Insert ansible galaxy tags here
 
 dependencies: []
